@@ -9,7 +9,7 @@ import os
 def test_mcp():
     server_path = "/Users/skyones/Desktop/Project/MCP/mcp_cisco.py"
     
-    print("🔧 Iniciando servidor MCP...")
+    print("🔧 starting MCP Server...")
     process = subprocess.Popen(
         ["python3", server_path],
         stdin=subprocess.PIPE,
@@ -28,13 +28,13 @@ def test_mcp():
         }
         
         json_str = json.dumps(request) + "\n"
-        print(f"\n→ Enviando: {json_str[:80]}...")
+        print(f"\n→ Sending: {json_str[:80]}...")
         
         process.stdin.write(json_str)
         process.stdin.flush()
         
         response_line = process.stdout.readline()
-        print(f"← Recibido: {response_line[:100]}...")
+        print(f"← Receiving: {response_line[:100]}...")
         
         return json.loads(response_line)
     
@@ -59,7 +59,7 @@ def test_mcp():
             print(f"  • {t['name']}")
         
         print("\n" + "="*50)
-        print("✅ TODOS LOS TESTS PASARON")
+        print("✅ All test pass")
         
     except Exception as e:
         print(f"\n❌ ERROR: {e}")
