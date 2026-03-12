@@ -9,7 +9,7 @@ import os
 def test_mcp():
     server_path = "/Users/skyones/Desktop/Project/MCP/mcp_cisco.py"
     
-    print("🔧 starting MCP Server...")
+    print("🔧 Starting MCP Server...")
     process = subprocess.Popen(
         ["python3", server_path],
         stdin=subprocess.PIPE,
