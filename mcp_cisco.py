@@ -5,7 +5,6 @@
 ================================================================================
  AUTHOR:    Jose Araujo
  VERSION:   1.0.0-secure
- DATE:      2026
 
  DESCRIPTION:
    Secure MCP server for Cisco IOS/IOS-XE device management with multi-layer

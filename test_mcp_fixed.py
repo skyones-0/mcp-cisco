@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# test_mcp_fixed.py - Tester corregido para MCP
 import json
 import subprocess
 import sys
