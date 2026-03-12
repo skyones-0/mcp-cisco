@@ -1,5 +1,3 @@
-```bash
-cat > README.md << 'EOF'
 # Cisco MCP Server
 
 Secure Model Context Protocol (MCP) server for Cisco IOS/IOS-XE network automation with multi-layer security controls.
@@ -141,8 +139,6 @@ BLOCKED_COMMANDS = [
 3. Commit changes (`git commit -m 'feat: add amazing feature'`)
 4. Push to branch (`git push origin feature/amazing`)
 5. Open Pull Request
-EOF
-```
 
 ```bash
 git add README.md
